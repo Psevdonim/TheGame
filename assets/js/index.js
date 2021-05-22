@@ -32,7 +32,7 @@ function startGame() {
 	$game.style.backgroundColor = '#fff'
 
 	var interval = setInterval(() => {
-		var time = parseFloat($time.textContent)
+		var time = parseFloat($time.textContent) 
 		if (time <= 0) {
 			clearInterval(interval)
 			endGame()
