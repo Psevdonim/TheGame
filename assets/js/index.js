@@ -22,13 +22,10 @@ function hide($el) {
 	$el.classList.add('hide')
 }
 
-
-
-
 function startGame() {
 	score = 0
 	setGameTimer()
-	$gameTime.setAttribute('disabled')
+	$gameTime.setAttribute('disabled','true')
 
 	isGameStarted = true
 	hide($start)
@@ -102,5 +99,5 @@ function renderBox() {
 }
 
 function getRand(min, max) {
-	return Math.floor(Math.random() * (max - min) + min) 
+	return Math.floor(Math.random() * (max - min) + min)
 }
